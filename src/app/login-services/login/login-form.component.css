@@ -1,0 +1,116 @@
+mat-card{
+  margin-top: 55px;
+  margin-bottom: -37px;
+  width: 350px;
+}
+
+.divMayor{
+  display: flex;
+  justify-content: center;
+}
+
+.divButton{
+  display: flex;
+  justify-content: center;
+}
+
+.divButton2{
+  display: flex;
+  justify-content: right;
+  margin-top: -9px;
+  margin-bottom: 6px;
+}
+
+.divButton3{
+  display: flex;
+  justify-content: center;
+  margin-top: 11px;
+}
+
+.divImage{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.image{
+  height: 50px;
+  width: 175px;
+}
+
+
+
+mat-form-field,
+textarea {
+  width: 100%;
+  align-items: center;
+}
+
+.divTitle{
+  display: flex;
+  justify-content: left;
+  color: #888686;
+  margin-bottom: -10px;
+  margin-top: 10px;
+}
+
+.textTitle{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.inputUsuario{
+  font-size: 14px;
+}
+
+.button{
+  width: 100%;
+  height: 50px;
+}
+
+
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: #01AD49 !important;
+ }
+
+ ::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: #01AD49 !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+ /*change color of underline when focused*/
+ background-color: #01AD49 !important;
+}
+
+.mat-button, .mat-raised-button{
+  background-color:#15944A;
+}
+
+.button2{
+  height: 25px;
+  background-color: transparent;
+  border-color: transparent;
+  border: transparent;
+}
+
+.button3{
+  width: 100%;
+  height: 50px;
+  background-color: #898787;
+  color: #D8D9D8;
+}
+
+.button2:hover{
+  color: #FF0000;
+}
+
+.button:hover{
+  background-color: #01C74A;
+}
+
+.button3:hover{
+  background-color: #5B5A5A;
+  color: #FFFFFF;
+}

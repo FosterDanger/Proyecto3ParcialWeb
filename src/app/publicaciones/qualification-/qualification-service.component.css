@@ -1,0 +1,137 @@
+
+mat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 115px;
+  height: 185px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  justify-content: center;
+}
+
+.icon{
+  width: 38.477px;
+  height: 67.557px;
+}
+
+.content{
+  width: 38.477px;
+  height: 67.557px;
+}
+
+.content1{
+  width: 50.524px;
+  height: 67.055px;
+}
+
+.content2{
+  width: 47.524px;
+  height: 64.055px;
+}
+
+.icon2{
+  width: 47.524px;
+  height: 64.055px;
+}
+
+.content3{
+
+  height: 64.055px;
+}
+
+.icon3{
+
+  height: 64.055px;
+}
+
+.content4{
+
+  width: 55.524px;
+  height: 67.055px;
+}
+
+.icon4{
+
+  width: 55.524px;
+  height: 67.055px;
+}
+
+
+button{
+  background-color: #888686;
+  width: 27px;
+  height: 27px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin-top: 5px;
+  }
+
+  label{
+  color: #000; /* Fallback for older browsers */
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  }
+
+  .Title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4D4D4D;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 2px 3px rgb(189,189,189,0.3);
+  }
+
+  .Title2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #E74032;
+    font-size: 11.5px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .star-container{
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+  }
+
+  .star {
+    padding: 3px;
+    cursor: pointer;
+  }
+
+  ngb-rating{
+    color: #FFC107;
+    cursor: pointer;
+    font-size: 15px;
+
+  }
+
+  .notfilled{
+    color:#3C4043;
+
+}
+
+
+

@@ -1,0 +1,57 @@
+<div class="divMayor">
+<mat-card>
+  <form [formGroup]="form">
+   <!--  <div class="divImage">
+      <img class="image" src="../../assets/images/LogoSalud2.png">
+    </div> -->
+    <div class="divTitle">
+      <h1 class="textTitle">Iniciar Sesión</h1>
+    </div>
+    <mat-form-field>
+      <input
+      placeholder="Usuario"
+      class="inputUsuario"
+      matInput
+      type="text"
+      formControlName="usuario">
+      <mat-error *ngIf="form.get('usuario').invalid">Por favor ingresa un usuario</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+      placeholder="Contraseña"
+      matInput
+      type="password"
+      formControlName="contraseña">
+      <mat-error *ngIf="form.get('contraseña').invalid">Por favor ingresa una contraseña</mat-error>
+    </mat-form-field>
+
+    <!-- <div class="divButton2">
+      <button
+        class="button2"
+        color="warn"
+        type="submit">¿Olvidaste tu contraseña?</button>
+      </div> -->
+
+
+<div class="divButton">
+  <button
+    class="button"
+    mat-raised-button
+    color="warn"
+    (click)="Entrar()"
+    type="submit">Entrar</button>
+  </div>
+
+
+  <div class="divButton3">
+    <button
+      class="button3"
+      mat-raised-button
+      color="warn"
+      (click)="Buttons()"
+      type="submit">Regístrarse</button>
+    </div>
+  </form>
+</mat-card>
+</div>

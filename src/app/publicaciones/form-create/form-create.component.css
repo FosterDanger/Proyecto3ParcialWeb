@@ -1,0 +1,91 @@
+mat-form-field,
+textarea {
+  width: 100%;
+  align-items: center;
+}
+
+.swalBtnColor {
+  color: #FFC900
+}
+
+.textTitle{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4D4D4D;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-shadow: 2px 3px rgb(189,189,189,0.3);
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: #01AD49 !important;
+ }
+
+ ::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: #01AD49 !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+ /*change color of underline when focused*/
+ background-color: #01AD49 !important;
+}
+
+.select{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.not-empty-select.mat-selected {
+  color: #01AD49 !important;
+}
+
+:host /deep/ .mat-select-value-text {
+  color: black !important;
+}
+
+::ng-deep .mat-select-value{
+  color: black !important;
+}
+
+.mat-select-panel {
+  background-color: #01AD49;
+}
+
+.mat-form-field-infix{
+  background-color: #01AD49;
+}
+
+.mat-form-field-type-mat-select .mat-form-field-label, .mat-select-value {
+  color: #01AD49;
+}
+
+::ng-deep .mat-select-arrow {
+  color: #01AD49 !important;
+}
+
+::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: #01AD49;
+}
+
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+  color: #01AD49;
+}
+
+::ng-deep .mat-form-field.mat-focused.mat-primary .mat-select-arrow{
+  color: #01AD49;
+}
+
+::ng-deep .mat-primary .mat-option.mat-selected:not(.mat-option-disabled){
+  color: #01AD49;
+}
+
+.mat-button, .mat-raised-button{
+  background-color:#15944A;
+}
+
+.button{
+  width: 100px;
+}
+

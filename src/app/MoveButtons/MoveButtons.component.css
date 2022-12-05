@@ -1,0 +1,122 @@
+.tool{
+  margin: 1rem auto;
+  margin-left: 47px;
+  margin-right: 47px;
+  margin-bottom: 2px;
+  border-top-width: 1.4px;
+  border-color: #000;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-top-style: solid;
+
+}
+
+
+.div{
+  /* margin: 1rem auto; */
+  margin-left: 47px;
+  margin-right: 47px;
+
+}
+
+.divL{
+  /* margin: 1rem auto; */
+
+  float: left;
+
+}
+
+.divR{
+  /* margin: 1rem auto; */
+  margin-left: 50px;
+  float: right;
+
+}
+
+
+.button, .label{
+
+
+ /* width: 20px;
+  height: 20px;
+  text-align: center;
+  align-content: center;*/
+  /*padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px; */
+ /* border-radius: 20px; */
+
+
+ vertical-align: middle;
+ margin: 10px 0;
+
+
+}
+
+.button{
+  background-color: #04AA6D;
+  margin-right: 26px;
+  width: 27px;
+  height: 27px;
+
+}
+
+.label{
+  color: #000; /* Fallback for older browsers */
+    color: rgba(0, 0, 0, 0.5);
+
+    font-size: 9.6pt;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.l{
+  margin-bottom: 13px;
+  margin-left: 4px;
+  font-size: 16px;
+  color: white;
+}
+
+.l2{
+
+    margin-bottom: 13px;
+    margin-left: 1px;
+    font-size: 16px;
+    color: white;
+
+}
+
+.buttonRight{
+
+  background-color: #04AA6D;
+  width: 27px;
+  height: 27px;
+
+  }
+
+  .Anterior, .buttonRight{
+    vertical-align: middle;
+   margin: 10px 0;
+
+  }
+
+
+.fill {
+    flex: 1 1 auto;
+}
+
+
+
+.Anterior{
+  color: #000; /* Fallback for older browsers */
+    color: rgba(0, 0, 0, 0.5);
+
+    font-size: 9.6pt;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-right: 26px;
+}
+
+

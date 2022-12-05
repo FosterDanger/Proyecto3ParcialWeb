@@ -1,0 +1,174 @@
+
+<label class="Title" > Evalua un servicio de acuerdo al numero de estrellas</label>
+<label class="Title2" > Solo puede evaluar un servicio</label>
+
+ <owl-carousel-o [options]="customOptions">
+  <ng-template carouselSlide>
+    <mat-card>
+      <mat-card-content class="content">
+        <img class="icon" src="assets/images/mastografia.png" />
+        <mat-card-content>
+          <label>Mastografía</label>
+        </mat-card-content>
+      </mat-card-content>
+
+      <mat-card-footer>
+
+       <div class="container">
+        <div class="star-container">
+        <ngb-rating (click)="getRating(0)" [max]="5" [(rate)]="currentRate" [readonly]="false" [formControl]="ratingControl">
+          <ng-template let-fill="fill" >
+            <span class="star" [class.filled]="fill === 100" [class.notfilled]="fill === 0">
+              &#9733;
+            </span>
+          </ng-template>
+        </ngb-rating>
+      </div>
+        <button mat-raised-button (click)="openSheet('Mastografía')">Evaluar</button>
+       </div>
+
+      </mat-card-footer>
+    </mat-card>
+  </ng-template>
+
+
+  <ng-template carouselSlide>
+    <mat-card>
+      <mat-card-content class="content">
+        <img class="icon" src="assets/images/Laboratorio.png" />
+        <mat-card-content>
+          <label>Laboratorio</label>
+        </mat-card-content>
+      </mat-card-content>
+
+      <mat-card-footer>
+        <div class="container">
+          <div class="star-container">
+          <ngb-rating   (click)="getRating(1)" [max]="5" [(rate)]="currentRate1" [readonly]="false" [formControl]="ratingControl1">
+            <ng-template let-fill="fill" >
+              <span class="star" [class.filled]="fill === 100" [class.notfilled]="fill === 0">
+                &#9733;
+              </span>
+            </ng-template>
+          </ngb-rating>
+        </div>
+          <button mat-raised-button (click)="openSheet('Laboratorio')">Evaluar</button>
+         </div>
+      </mat-card-footer>
+    </mat-card>
+
+
+  </ng-template>
+  <ng-template carouselSlide>
+    <mat-card>
+      <mat-card-content class="content1">
+        <img class="icon" src="assets/images/ultrasonido.png" />
+        <mat-card-content>
+          <label>Ultrasonido</label>
+        </mat-card-content>
+      </mat-card-content>
+
+      <mat-card-footer>
+
+       <div class="container">
+        <div class="star-container">
+        <ngb-rating (click)="getRating(2)" [max]="5" [(rate)]="currentRate2" [readonly]="false" [formControl]="ratingControl2">
+          <ng-template let-fill="fill" >
+            <span class="star" [class.filled]="fill === 100" [class.notfilled]="fill === 0">
+              &#9733;
+            </span>
+          </ng-template>
+        </ngb-rating>
+      </div>
+        <button mat-raised-button (click)="openSheet('Ultrasonido')">Evaluar</button>
+       </div>
+
+      </mat-card-footer>
+    </mat-card>
+  </ng-template>
+
+  <ng-template carouselSlide>
+    <mat-card>
+      <mat-card-content class="content2">
+        <img class="icon2" src="assets/images/lentes.png" />
+        <mat-card-content>
+          <label>Lentes</label>
+        </mat-card-content>
+      </mat-card-content>
+
+      <mat-card-footer>
+
+        <div class="container">
+          <div class="star-container">
+          <ngb-rating (click)="getRating(3)" [max]="5" [(rate)]="currentRate3" [readonly]="false" [formControl]="ratingControl3">
+            <ng-template let-fill="fill" >
+              <span class="star" [class.filled]="fill === 100" [class.notfilled]="fill === 0">
+                &#9733;
+              </span>
+            </ng-template>
+          </ngb-rating>
+        </div>
+          <button mat-raised-button (click)="openSheet('Lentes')">Evaluar</button>
+         </div>
+
+      </mat-card-footer>
+    </mat-card>
+  </ng-template>
+
+  <ng-template carouselSlide>
+    <mat-card>
+      <mat-card-content class="content3">
+        <img class="icon3" src="assets/images/electro.png" />
+        <mat-card-content>
+          <label>Electrocardiograma</label>
+        </mat-card-content>
+      </mat-card-content>
+
+      <mat-card-footer>
+
+        <div class="container">
+          <div class="star-container">
+          <ngb-rating (click)="getRating(4)" [max]="5" [(rate)]="currentRate4" [readonly]="false" [formControl]="ratingControl4">
+            <ng-template let-fill="fill" >
+              <span class="star" [class.filled]="fill === 100" [class.notfilled]="fill === 0">
+                &#9733;
+              </span>
+            </ng-template>
+          </ngb-rating>
+        </div>
+          <button mat-raised-button (click)="openSheet('Electrocardiograma')">Evaluar</button>
+         </div>
+
+      </mat-card-footer>
+    </mat-card>
+  </ng-template>
+
+  <ng-template carouselSlide>
+    <mat-card>
+      <mat-card-content class="content4">
+        <img class="icon4" src="assets/images/tomografia.png" />
+        <mat-card-content>
+          <label>Tomografía</label>
+        </mat-card-content>
+      </mat-card-content>
+
+      <mat-card-footer>
+
+         <div class="container">
+          <div class="star-container">
+          <ngb-rating (click)="getRating(5)" [max]="5" [(rate)]="currentRate5" [readonly]="false" [formControl]="ratingControl5">
+            <ng-template let-fill="fill" >
+              <span class="star" [class.filled]="fill === 100" [class.notfilled]="fill === 0">
+                &#9733;
+              </span>
+            </ng-template>
+          </ngb-rating>
+        </div>
+          <button mat-raised-button (click)="openSheet('Tomografía')">Evaluar</button>
+         </div>
+
+      </mat-card-footer>
+    </mat-card>
+  </ng-template>
+</owl-carousel-o>
+

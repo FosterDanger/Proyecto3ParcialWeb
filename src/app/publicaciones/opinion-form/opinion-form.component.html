@@ -1,0 +1,20 @@
+<div class="Contenedor">
+<mat-card class="card">
+
+  <form [formGroup]="form">
+    <div class="divTitle">
+    <h1 class="textTitle">En el siguiente apartado escribe si recomendarías a salud digna:</h1>
+  </div>
+    <mat-form-field>
+      <div class="divtArea">
+      <textarea matInput
+      rows="6"
+      placeholder="Recomendacion"
+      formControlName="Recomendacion"> </textarea>
+      <mat-error *ngIf="form.get('Recomendacion').invalid">Por favor ingresa una recomendacion</mat-error>
+    </div>
+    </mat-form-field>
+
+  </form>
+</mat-card>
+</div>

@@ -1,0 +1,54 @@
+<mat-card>
+  <form (submit)="onAddPost(postForm)" #postForm="ngForm">
+    <h1 class="textTitle">Ingresa los siguientes datos para iniciar la encuesta:</h1>
+    <mat-form-field>
+      <input
+      placeholder="Nombre completo"
+      matInput
+      type="text"
+      name="nombre"
+      required
+      [ngModel] = "post?.nombre"
+      #nombre = "ngModel">
+      <mat-error >Por favor ingresa un nombre</mat-error>
+    </mat-form-field>
+
+    <mat-form-field floatLabel="always">
+      <mat-label >Estado</mat-label>
+      <mat-select placeholder="Elige un estado" [(ngModel)]="selected" (ngModelChange)="cambioRegion()" name="estado"
+      [ngModel] = "post?.estado"
+      required
+      #estado = "ngModel">
+      <mat-option
+      *ngFor="let estado of estados" [value]="estado.nombre"
+      >{{estado.nombre}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field  floatLabel="always">
+    <mat-label >Municipio</mat-label>
+    <mat-select placeholder="Elige un Municipio" [(ngModel)]="selectedSucursal" (ngModelChange)="cambioCiudad()" name="ciudad"
+    [ngModel] = post?.ciudad
+    required
+    #ciudad = "ngModel">
+    <mat-option  *ngFor="let ciudad of ciudades" [value]="ciudad">{{ciudad}}</mat-option>
+
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field floatLabel="always">
+  <mat-label >Sucursal</mat-label>
+  <mat-select placeholder="Elige una sucursal" name="sucursal"
+  [ngModel] = post?.sucursal
+  required
+  #sucursal = "ngModel">
+  <mat-option *ngFor="let sucursal of sucursales" [value]="sucursal" >{{sucursal}}</mat-option>
+</mat-select>
+</mat-form-field>
+   <!--  <button
+    class="button"
+    mat-raised-button
+    color="warn"
+    type="submit">Enviar</button> -->
+  </form>
+</mat-card>
